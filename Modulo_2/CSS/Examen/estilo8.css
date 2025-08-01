@@ -1,0 +1,17 @@
+header {
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    background-color: navy;
+    padding: 20px;
+    color: azure;
+}
+
+footer {
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+}

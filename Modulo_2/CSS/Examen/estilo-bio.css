@@ -1,0 +1,74 @@
+body {
+    background-color:burlywood;
+}
+
+header {
+    background-color: #333;
+    color: aliceblue;
+    text-align: center;
+    padding: auto;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Sobre-mi {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+h2 {
+    background-color: beige;
+}
+
+p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    margin-right: -23%;
+    margin-left: -23%;
+    padding: 1.5%;
+}
+
+p2 {
+    background-color: #333;
+}
+
+.Mis-hobbies {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+    background-color: #333;
+    color: aliceblue;
+}
+
+ul {
+    border: 2px solid #333;
+    background-color: beige;
+    font-size: 20;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 70%;
+}
+
+footer {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #333;
+    color: aliceblue;
+}
+
+a {
+    color:aliceblue
+}
+
+img {
+    width: 600px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+    border: 5px solid #333;
+}
