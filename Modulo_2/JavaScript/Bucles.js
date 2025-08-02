@@ -7,7 +7,7 @@ for (let i = 1; i <= 10; i++){
     console.log(`${numero} x ${i} = ${numero * i}`);
 }
 
-//Ejercicio 2
+//Ejercicio 3
 
 let contador = 10;
 
@@ -18,7 +18,7 @@ while(contador >= 0){
 }
 console.log("¡Despegue!");
 
-//Ejercicio 3
+//Ejercicio 4
 
 const NumeroSecreto = Math.floor(Math.random() * 10)+1;
 let intentousuario = 0;
@@ -35,4 +35,5 @@ while (intentousuario !== NumeroSecreto){
     } else {
         console.log("Incorrecto, intentando nuevamente...");
     }
+
 }
