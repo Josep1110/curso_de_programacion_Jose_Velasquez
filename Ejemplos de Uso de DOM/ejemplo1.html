@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejemplo 1 de DOM</title>
+</head>
+<body>
+    <p id="parrafo-principal">Este es el texto original del párrafo.</p>
+    <button id="boton-cambiar">Haz clic para cambiar el texto</button>
+
+    <script>
+        // Seleccionamos el párrafo y el botón
+        const parrafo = document.getElementById("parrafo-principal");
+        const boton = document.getElementById("boton-cambiar");
+
+        // Añadimos un "escuchador de eventos" al botón
+        boton.addEventListener("click", function() {
+            // Cuando se haga clic, cambiamos el contenido del párrafo
+            parrafo.textContent = "¡El texto ha sido cambiado con éxito usando JavaScript!";
+        });
+    </script>
+</body>
+</html>

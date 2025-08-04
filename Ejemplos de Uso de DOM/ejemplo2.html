@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejemplo 2 de DOM</title>
+    <style>
+        .contenedor-caja {
+            width: 200px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            text-align: center;
+            line-height: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="caja-estilo" class="contenedor-caja">
+        Pasa el mouse por aquí
+    </div>
+
+    <script>
+        // Seleccionamos el elemento de la caja
+        const caja = document.getElementById("caja-estilo");
+
+        // Al pasar el mouse por encima, cambiamos su color de fondo
+        caja.addEventListener("mouseover", function() {
+            caja.style.backgroundColor = "red";
+            caja.style.color = "white";
+        });
+
+        // Al salir el mouse, revertimos el color de fondo
+        caja.addEventListener("mouseout", function() {
+            caja.style.backgroundColor = "white";
+            caja.style.color = "black";
+        });
+    </script>
+</body>
+</html>
