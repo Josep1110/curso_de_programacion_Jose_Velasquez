@@ -1,0 +1,264 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nata Sans', sans-serif;
+}
+
+body {
+  background: #53667f;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 10px;
+  background: #1c2025;
+  height: 550px;
+  width: 330px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.input-box {
+  background: #1c2025;
+  height: 200px;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.input-box .result {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  right: 25px;
+  bottom: 0px;
+  overflow-x: auto;
+  scrollbar-color: rgb(255, 174, 0) transparent;
+  scrollbar-width: thin;
+  width: 88%;
+  text-align: right;
+}
+
+.input-box input {
+  all: unset;
+  color: grey;
+  position: absolute;
+  right: 25px;
+  bottom: 70px;
+  text-align: right;
+  font-size: 25px;
+  width: 88%;
+  overflow-x: auto;
+}
+
+.btns-box {
+  position: absolute;
+  left: 0;
+  top: 200px;
+  width: 100%;
+  padding: 10px 10px 0 20px;
+  box-sizing: border-box;
+}
+
+.btns-box .btn,
+.btns-box .btns,
+.btns-box #ac,
+.btns-box #del-btn {
+  all: unset;
+  width: 50px;
+  height: 50px;
+  float: left;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 10px;
+  border: 1px solid #24282e;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.btns-box .btn {
+  background: black;
+}
+
+.btns-box #ac,
+.btns-box #del-btn {
+  background: #24282e;
+}
+
+.btns-box .with-bg-btn {
+  color: whitesmoke;
+  background: #24282e;
+}
+
+.btns-box .shift {
+  position: relative;
+  left: 72px;
+}
+
+.scientific-btns {
+  height: 300px;
+  width: 230px;
+  background: rgb(255, 174, 0);
+  border-radius: 7px;
+  padding: 15px;
+  position: absolute;
+  margin-left: 8px;
+  bottom: 30px;
+  left: -210px;
+  transition: 0.5s;
+}
+
+.scientific-btns.active {
+  left: 5px;
+}
+
+.scientific-btns .scien-btns {
+  all: unset;
+  height: 35px;
+  width: 45px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #24282e;
+  border-radius: 7px;
+  background: transparent;
+}
+
+.scientific-btns .pow-btn .pow,
+.scientific-btns .pow-btn .pow3 {
+  position: relative;
+  bottom: .4em;
+  left: .1em;
+}
+
+.scientific-btns .back-btn {
+  all: unset;
+  height: 50px;
+  width: 70px;
+  background: rgb(255, 174, 0);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: absolute;
+  bottom: 0;
+  right: -65px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 98vw;
+    min-width: 0;
+    height: 98vh;
+    min-height: 0;
+    border-radius: 10px;
+    padding: 2vw;
+    top: 0;
+    left: 0;
+    position: fixed;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  .input-box {
+    height: 120px;
+    padding: 10px;
+  }
+  .input-box .result {
+    font-size: 7vw;
+    right: 10px;
+    width: 90%;
+  }
+  .input-box input {
+    font-size: 5vw;
+    right: 10px;
+    width: 90%;
+    bottom: 50px;
+  }
+  .btns-box {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    padding: 5px 5px 0 10px;
+  }
+  .btns-box .btn,
+  .btns-box .btns,
+  .btns-box #ac,
+  .btns-box #del-btn {
+    width: 12vw;
+    height: 12vw;
+    min-width: 38px;
+    min-height: 38px;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    font-size: 5vw;
+  }
+  .btns-box .shift {
+    left: 0;
+  }
+  .scientific-btns {
+    width: 85vw;
+    min-width: 0;
+    height: 40vw;
+    min-height: 0;
+    padding: 2vw;
+    left: -90vw;
+    bottom: 10vw;
+    margin-left: 0;
+    border-radius: 5vw;
+  }
+  .scientific-btns.active {
+    left: 2vw;
+  }
+  .scientific-btns .scien-btns {
+    width: 15vw;
+    height: 8vw;
+    min-width: 35px;
+    min-height: 30px;
+    margin-left: 3vw;
+    margin-top: 7vw;
+    font-size: 5vw;
+  }
+  .scientific-btns .back-btn {
+    width: 18vw;
+    height: 10vw;
+    border-top-right-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    right: -16vw;
+    bottom: 0;
+  }
+}
+
+
+
+
+
+
