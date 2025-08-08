@@ -61,10 +61,4 @@ let pow = () => {
 
 let pow3 = () => {
     input.value = Math.pow (input.value, 3);
-}
-
-
-
-
-
-  
+}  
