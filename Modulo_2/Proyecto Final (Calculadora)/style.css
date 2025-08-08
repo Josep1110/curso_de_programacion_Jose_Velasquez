@@ -115,6 +115,11 @@ body {
   left: 72px;
 }
 
+.btns-box .with-bg-btn .shift {
+  position: relative;
+  left: 72px;
+}
+
 .scientific-btns {
   height: 300px;
   width: 230px;
@@ -256,3 +261,4 @@ body {
     bottom: 0;
   }
 }
+
